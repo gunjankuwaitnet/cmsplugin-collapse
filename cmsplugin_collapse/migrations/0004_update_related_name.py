@@ -14,11 +14,11 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='accordionheader',
             name='cmsplugin_ptr',
-            field=models.OneToOneField(parent_link=True, related_name='cmsplugin_collapse_accordionheader', auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin'),
+            field=models.OneToOneField(parent_link=True, related_name='cmsplugin_collapse_accordionheader', auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin', on_delete=models.CASCADE),
         ),
         migrations.AlterField(
             model_name='collapsible',
             name='cmsplugin_ptr',
-            field=models.OneToOneField(parent_link=True, related_name='cmsplugin_collapse_collapsible', auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin'),
+            field=models.OneToOneField(parent_link=True, related_name='cmsplugin_collapse_collapsible', auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin', on_delete=models.CASCADE),
         ),
     ]
